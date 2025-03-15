@@ -1,0 +1,15 @@
+{
+    "name": "satellite",
+    "version": "1.0.0",
+    "description": "a websocket relay",
+    "license": "MIT",
+    "author": "nobody@nowhere.mars",
+    "type": "module",
+    "scripts": {
+        "client": "node client.js"
+    },
+    "dependencies": {
+        "http-headers": "^3.0.2",
+        "ws": "^8.18.1"
+    }
+}

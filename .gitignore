@@ -1,0 +1,9 @@
+debug/
+client/node_modules/
+
+**/*.sh
+**/.env*
+
+package-lock.json
+pnpm-lock.yaml
+deno.lock
