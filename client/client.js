@@ -8,14 +8,16 @@ import * as utils from './utils.js'
 
 function generate_config() {
     const cfg = {
+        // 远程服务器配置
         ['UUID']: '8ad358ba-093a-4c40-8795-a269e795297d',
         ['SERVER_URL']: 'http://127.0.0.1:3001/',
 
         // 映射到公网后的 websocket relay 网址
-        // 例：https://ws-relay.your-website.test/
+        // 例：wss://ws-relay.your-website.test/
         ['WS_RELAY_PUBLIC_URL']: 'ws://127.0.0.1:3002/',
 
         // 本地 websocket relay 地址
+        // 需要使用 cloudflared 等服务把端口映射到公网
         ['WS_RELAY_LOCAL_URL']: 'http://127.0.0.1:3002/',
 
         // 本地 http 代理地址
