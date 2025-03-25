@@ -25,5 +25,11 @@ deno run --allow-net server.js
 curl -v -x "http://127.0.0.1:3000/" http://www.baidu.com/
 ```
 
+#### 各平台差异
+ * 某平台的其中一位合作伙伴是中国某知名公司，不要在那个平台上测试
+ * 某平台在 response 后会切断所有连接，需要调用 context.waitUntil() 保住连接
+ * 某些套壳 AWS 的 serverless 平台速度感人
+ * 域名的兼容性会比 IP 好一点
+
 #### 叠甲
 我水平不高，各位如果遇到问题，大概率我解决不了。
